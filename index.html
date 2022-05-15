@@ -17,11 +17,18 @@
     max-width: 412px;
     user-select: none
   }
+  input .ordernow{
+    font-size: 16px;
+  }
 
   .img-responsive {
     border: 0;
     max-width: 90%;
-    margin-top: -20px
+    margin-top: -20px;
+    position: absolute;
+    left: 0;
+    top: 500px;
+
   }
 
   header {
@@ -434,12 +441,13 @@
 
   <form method="post" name="google-sheet">
     <label for="name">
-      <input type="text" id="name" name="name" placeholder="Your Name..." />
+      <input style="width:100%; padding: 5px; margin: 5px;" type="text" id="name" name="name" placeholder="Your Name..." />
     </label>
     <label for="mobile">
-      <input type="text" id="mobile" name="mobile" placeholder="Your Number..." />
+      <input style="width:100%; padding: 5px; margin: 5px;" type="text" id="mobile" name="mobile" placeholder="Your Number..." />
     </label>
-    <input type="submit" value="ORDER NOW" />
+    <input style="width:100%; font-size:22px; padding: 5px; margin: 5px; border-radius:10px; background: red;
+    font-weight: bolder;" class="ordernow" type="submit" value="ORDER NOW" />
   </form>
 
 
