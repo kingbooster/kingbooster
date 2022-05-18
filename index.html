@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>King Booster</title>
 </head>
 <style>
@@ -15,52 +15,54 @@
     color: #fff;
     min-width: 240px;
     max-width: 412px;
-    user-select: none
+    user-select: none;
+    padding: 10px;
   }
-  input .ordernow{
+
+  input .ordernow {
     font-size: 16px;
   }
 
   .img-responsive {
     border: 0;
-    max-width: 36%;
+    max-width: 22%;
     margin-top: -20px;
     position: absolute;
     left: 0;
     top: 50px;
-
   }
 
   header {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
-    font-style: italic
+    font-style: italic;
   }
 
   header h2 {
     margin: 0;
-    padding-right: .8rem;
-    padding-bottom: .5rem;
+    padding-right: 0.8rem;
+    padding-bottom: 0.5rem;
     font-size: 1rem;
-    text-align: right
+    text-align: right;
   }
-
 
   .product {
     display: flex;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .product .left {
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
   }
 
   .product .right {
-    width: 50%
+    flex-basis: 60%;
   }
 
   .product .discount {
@@ -72,37 +74,36 @@
     font-weight: 700;
     font-style: italic;
     text-align: center;
-    width: 85%;
+    width: 70%;
     height: 4rem;
     line-height: 4rem;
     letter-spacing: -3px;
-    margin-top: -.3rem
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .product .discount div {
-    transform: skew(15deg)
+    transform: skew(15deg);
   }
 
   .product .price {
     color: #1bff26;
     font-weight: 700;
-    letter-spacing: -3px
+    letter-spacing: -3px;
   }
 
   .product .discount-text {
     color: #fff;
-    margin-top: 15px
+    margin-top: 15px;
+    text-align: center;
   }
 
   .product .price span {
     font-weight: 300;
     font-size: 4rem;
     font-style: italic;
-    margin-left: -40px
-  }
-
-  form {
-    margin: 2rem 1rem
+    margin-left: -40px;
   }
 
   .name-input,
@@ -117,14 +118,14 @@
     font-size: 20px;
     margin-bottom: 10px;
     display: flex;
-    transition: all .15s ease-in-out
+    transition: all 0.15s ease-in-out;
   }
 
   .button-submit:focus,
   .name-input:focus-within,
   .phone-input:focus-within {
     outline: 0;
-    box-shadow: 0 0 0 4px #bdab3c
+    box-shadow: 0 0 0 4px #bdab3c;
   }
 
   .button-submit {
@@ -145,21 +146,21 @@
     border: 0;
     padding: 14px 0;
     background-image: linear-gradient(to top, #a20b0c, #f11);
-    transition: all .15s ease-in-out;
-    cursor: pointer
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
   }
 
   .button-submit-text {
-    flex: 1 1 auto
+    flex: 1 1 auto;
   }
 
   .button-submit-arrow {
     width: 0;
     height: 0;
-    border-top: .6rem solid transparent;
-    border-bottom: .6rem solid transparent;
+    border-top: 0.6rem solid transparent;
+    border-bottom: 0.6rem solid transparent;
     border-left: 1rem solid #fff;
-    margin-right: 1rem
+    margin-right: 1rem;
   }
 
   .countdown-container {
@@ -174,13 +175,13 @@
     font-weight: 600;
     font-size: 2.8rem;
     text-align: center;
-    padding: 10px 0
+    padding: 10px 0;
   }
 
   .sconto div {
     color: #fff;
     animation: color-change 1s infinite;
-    perspective: 1000
+    perspective: 1000;
   }
 
   .countdown-container h3 {
@@ -191,7 +192,7 @@
     width: 90%;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.2rem
+    font-size: 1.2rem;
   }
 
   .countdown {
@@ -200,7 +201,7 @@
     align-items: center;
     font-weight: 300;
     font-size: 3.5rem;
-    margin: .6rem 0
+    margin: 0.6rem 0;
   }
 
   .countdown-text {
@@ -209,49 +210,48 @@
     background: #000;
     width: 90%;
     color: #fffd07;
-    font-size: .7rem;
+    font-size: 0.7rem;
     font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase
+    text-transform: uppercase;
   }
 
   .countdown-text span {
     width: 4rem;
-    margin-right: 1.5rem
+    margin-right: 1.5rem;
   }
 
   .countdown-text span:last-child {
-    margin-right: 0
+    margin-right: 0;
   }
-
 
   @media (max-width: 400px) {
     header h2 {
-      font-size: 13px
+      font-size: 13px;
     }
   }
 
   @media (max-width: 320px) {
     .countdown-container h3 {
-      font-size: 1rem
+      font-size: 1rem;
     }
   }
 
   @media (max-width: 240px) {
     .product .price span {
-      margin-left: -15px
+      margin-left: -15px;
     }
 
     .product .discount {
       font-size: 2.5rem;
       line-height: 3rem;
-      height: 3rem
+      height: 3rem;
     }
 
     .product .discount-text {
-      font-size: 13px
+      font-size: 13px;
     }
   }
 
@@ -262,17 +262,17 @@
     font-weight: 300;
     font-size: 4rem;
     line-height: 1;
-    margin: 0
+    margin: 0;
   }
 
   .timer__item {
     color: #fff;
-    font-weight: 700
+    font-weight: 700;
   }
 
   .countdown-divider {
     color: #fff;
-    width: 2rem
+    width: 2rem;
   }
 
   .countdown-text {
@@ -280,27 +280,22 @@
     width: 90%;
     padding-bottom: 10px;
     color: #fff;
-    font-size: .5rem;
+    font-size: 0.5rem;
     font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    background: transparent
+    background: transparent;
   }
 
   .countdown-text span {
     width: 4rem;
-    margin-right: 2rem
+    margin-right: 2rem;
   }
 
   .countdown-text span:last-child {
-    margin-right: 0
-  }
-
-  form {
-    margin: 2rem .5rem;
-    margin-top: 0
+    margin-right: 0;
   }
 
   .name-input,
@@ -314,7 +309,7 @@
     font-size: 20px;
     margin-bottom: 10px;
     display: flex;
-    transition: all .15s ease-in-out
+    transition: all 0.15s ease-in-out;
   }
 
   .name-input input,
@@ -327,20 +322,27 @@
     min-width: 0;
     padding: 10px 15px;
     border-radius: 0 6px 6px 0;
-    padding-left: 5px
+    padding-left: 5px;
   }
 
   .button-submit:focus,
   .name-input:focus-within,
   .phone-input:focus-within {
     outline: 0;
-    box-shadow: 0 0 0 4px #bdab3c
+    box-shadow: 0 0 0 4px #bdab3c;
   }
 
   .name-input:focus-within input,
   .phone-input:focus-within input {
-    outline: 0
+    outline: 0;
   }
+
+  .junaid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .junaid img { max-width: 100px;}
 
   .name-input label,
   .phone-input label {
@@ -349,23 +351,16 @@
     margin: 0;
     font-weight: 700;
     width: 45px;
-    text-align: center
+    text-align: center;
   }
 
   .name-input label svg {
-    vertical-align: middle
+    vertical-align: middle;
   }
 
   .bottom-call {
     background: #070707;
     text-align: center;
-    background-position: bottom;
-    /* position: fixed; */
-    bottom: 0px;
-    z-index: 9;
-    width: 100%;
-    display: block;
-    border-top: solid 1px #d2d2d2;
   }
 
   .bottom-call h1 {
@@ -376,40 +371,82 @@
   }
 
   .bottom-call a {
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 0px 0px;
+  }
+
+  .productImg img {
+    width: 100%;
+  }
+
+  .med {
+    float: right;
+    font-size: 20px;
+  }
+
+  .effect {
+    font-size: 35px;
+    color: #daa520;
+    text-decoration: underline;
+    font-style: italic;
+  }
+
+  .h3 {
+    text-align: center
+  }
+  .forms {
+    max-width: 90%;
+    margin: auto;
+  }
+  .forms input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid gray;
+    background: white;
+    margin-bottom: 10px;
+  }
+  .forms input.ordernow {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #bd0000;
+    color: white;
+    border: none;
+    cursor: pointer;
   }
 </style>
 
 <body>
-
-  <div>
-    <a href="tel:8744097947">
+  <!-- <div> -->
+  <!-- <a href="tel:8744097947">
       <img src="img/call.gif" style="    z-index: 1;
       top: -9px;
       left: -12px;" class="img-responsive" alt="" />
-    </a>
-  </div>
+    </a> -->
+  <!-- </div> -->
+
   <div class="bottom-call" id="lower_call">
     <h1>
-      <a href="tel:8744097947" target="_blank">
-        <span id="lower_text">अभी कॉल करे - 8744-097-947 </span>
-      </a>
+      <a href="tel:8744097947" target="_blank"><span id="lower_text">अभी कॉल करे - 8744-097-947 </span></a>
     </h1>
   </div>
- 
-  <div class="product">   
-    <div class="left">
-      <img alt="" style="left: 9px;
-      top: 94px;
-      max-width: 47%;" class="img-responsive" src="img/home_greatest.jpeg">
-    </div>
+  <div class="productImg">
+    <img alt="" src="img/home_greatest.jpeg" />
+  </div>
+
+  <div class="product">
     <div class="right">
       <div class="discount">
-        <div style="text-decoration:line-through black">₹2490</div>
+        <div style="text-decoration: line-through black">₹2490</div>
       </div>
       <div class="discount-text">DISCOUNT PRICE</div>
-      <div class="price" style="text-align:center"><span><b>₹1490</b></span></div>
+      <div class="price" style="text-align: center">
+        <span><b>₹1490</b></span>
+      </div>
+    </div>
+    <div class="effect">
+      <strong>No Side <br />Effect <br />Oil Free</strong>
     </div>
   </div>
 
@@ -439,54 +476,67 @@
     </div>
   </div>
 
+  <h3 class="h3">
+    आज ही हमसे ऑनलाइन सलाह लें संतुष्टि की गारंटी!:<b id="stock-count"></b>
+  </h3>
 
-
-  <h3>आज ही हमसे ऑनलाइन सलाह लें संतुष्टि की गारंटी!:<b id="stock-count"></b></h3>
-
-  <form method="post" name="google-sheet">
+  <form class="forms" method="post" name="google-sheet">
     <label for="name">
-      <input style="width:100%; padding: 5px; margin: 5px;" type="text" id="name" name="name" placeholder="Your Name..." />
+      <input type="text" id="name" name="name"
+        placeholder="Your Name..." />
     </label>
     <label for="mobile">
-      <input style="width:100%; padding: 5px; margin: 5px;" type="text" id="mobile" name="mobile" placeholder="Your Number..." />
+      <input type="text" id="mobile" name="mobile"
+        placeholder="Your Number..." />
     </label>
-    <input style="width:100%; font-size:22px; padding: 5px; margin: 5px; border-radius:10px; background: red;
-    font-weight: bolder;" class="ordernow" type="submit" value="ORDER NOW" />
+    <input class="ordernow" type="submit" value="ORDER NOW" />
   </form>
 
+  
+  <div class="junaid">  
+      <a href="tel:8744097947"><img src="img/call.gif" alt="" /></a>
 
-
+    <div class="med">
+      <strong>100% Ayurvedic Medicine</strong>
+    </div>
+  </div>
+    <div class="bottom-call" id="lower_call">
+      <h1>
+        <a href="tel:8744098019" target="_blank">
+          <span id="lower_text">अभी कॉल करे - 8744-098-019 </span>
+        </a>
+      </h1>
+    </div>
 
 
   <script src="js/jquery-1.12.4.min.js"></script>
   <script src="js/timer.js"></script>
   <script>
     function highlightBlock1() {
-      $('#lower_text').html('8744097947');
-      $('#lower_text').css('color', 'yellow');
-      $('#lower_text').css('font-size', '40px');
+      $("#lower_text").html("8744097947");
+      $("#lower_text").css("color", "yellow");
+      $("#lower_text").css("font-size", "40px");
 
       setTimeout(function () {
-        $('#lower_text').html('CALL NOW');
-        $('#lower_text').css('color', 'yellow');
-        $('#lower_text').css('font-size', '40px');// Change back
+        $("#lower_text").html("CALL NOW");
+        $("#lower_text").css("color", "yellow");
+        $("#lower_text").css("font-size", "40px"); // Change back
       }, 1000);
       setTimeout(function () {
-        $('#lower_text').html('अभी कॉल करे।');
-        $('#lower_text').css('color', 'yellow');
-        $('#lower_text').css('font-size', '40px');// Change back
+        $("#lower_text").html("अभी कॉल करे।");
+        $("#lower_text").css("color", "yellow");
+        $("#lower_text").css("font-size", "40px"); // Change back
       }, 2000);
     }
-    var c = parseInt('99');
-    $('#stock-count').html(c);
+    var c = parseInt("99");
+    $("#stock-count").html(c);
     var stock_count = setInterval(function () {
-      $('#stock-count').html(c);
+      $("#stock-count").html(c);
       c--;
       if (c < 4) {
         clearInterval(stock_count);
       }
     }, 3000);
-
 
     // form data script start here
     function validateform(form) {
@@ -502,22 +552,18 @@
       form.submit();
     }
 
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbzT5O8wPCbsmAukw913i9Ul-wUwkeloWCeXT5fFPonpiRowBG5ronIn8XwUFSxQ9NJ7/exec";
+    const form = document.forms["google-sheet"];
 
-
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzT5O8wPCbsmAukw913i9Ul-wUwkeloWCeXT5fFPonpiRowBG5ronIn8XwUFSxQ9NJ7/exec'
-    const form = document.forms['google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-        .catch(error => console.error('Error!', error.message))
-    })
-
-
-
-
-
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) =>
+          alert("Thanks for Contacting us..! We Will Contact You Soon...")
+        )
+        .catch((error) => console.error("Error!", error.message));
+    });
   </script>
 </body>
 
