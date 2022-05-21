@@ -8,7 +8,7 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(12,241,255,1) 24%, r
    max-width: 1200px;
    margin: auto;
    overflow: hidden;
-   /* display: flex; */
+   display: flex;
 }
 h1{
    font-size: 50px;
@@ -61,9 +61,9 @@ h2{
 }
 
 .img-cont img{
-   width: 160px;
-   border-radius: 55px;
-   height: 90px;
+  width: 290px;
+  height: 250px;
+  
 }
 h3{
    text-align: center;
