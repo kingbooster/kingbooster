@@ -1,0 +1,91 @@
+body{
+   color: #fff;
+   background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(12,241,255,1) 24%, rgba(0,0,0,1) 100%);
+}
+
+.container{
+   max-width: 1200px;
+   margin: auto;
+   overflow: hidden;
+   /* display: flex; */
+}
+h1{
+   font-size: 50px;
+   font-style: italic;
+   
+}
+.gallery{
+   margin: 5px;
+   border: 1px solid #ccc;
+   width: 390px;
+   border-radius: 220px;
+   border-style: hidden;
+   text-align: center;
+}
+.gallery img{
+   width: 100%;
+   height: auto;
+   border-radius: 50%;
+   cursor: pointer;
+   max-width: 250px;
+   max-height: 200px;
+}
+.desc{
+   padding: 15px;
+   text-align: center;
+}
+.desc h1{
+   font-size: 15px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+   text-align: center;
+   font-size: 30px;
+}
+
+h2{
+   text-align: center;
+   padding: 4px;
+}
+
+.features{
+   display: flex;
+   font-size: 20px;
+   margin: 50px;
+   justify-content: space-around;
+   text-align: center;
+}
+.img-cont{
+   text-align: center;
+}
+
+.img-cont img{
+   width: 160px;
+   border-radius: 55px;
+   height: 90px;
+}
+h3{
+   text-align: center;
+   font-size: 22px;
+   padding-top: 11px;
+   line-height: 25px;
+}
+p{
+   text-align: center;
+}
+/* .img-row{
+   display: flex;
+   justify-content: space-around;
+} */
+
+/* For mobile screens */
+
+@media screen and (max-width: 767px){
+   .container{
+      flex-wrap: wrap;
+   }
+   .gallery{
+      flex: 0 0 100%;
+   }
+}
